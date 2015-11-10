@@ -44,4 +44,43 @@ try {
   echo $code.": ".$error_message."<br />";
 }
 
+$content = fopen("david_bures.jpg", "r");
+$blob_name = "david_bures.jpg";
+
+try {
+    //Upload blob
+    $blobRestProxy->createBlockBlob("mycontainer", $blob_name, $content);
+}
+catch(ServiceException $e){
+    // Handle exception based on error codes and messages.
+    // Error codes and messages are here:
+    // http://msdn.microsoft.com/library/azure/dd179439.aspx
+    $code = $e->getCode();
+    $error_message = $e->getMessage();
+    echo $code.": ".$error_message."<br />";
+}
+echo('blob uploaded<br />');
+
+try {
+    // List blobs.
+    $blob_list = $blobRestProxy->listBlobs("mycontainer");
+    $blobs = $blob_list->getBlobs();
+
+    foreach($blobs as $blob)
+    {
+        echo $blob->getName().": ".$blob->getUrl()."<br />";
+        echo "<img src='".$blob->getUrl()."'/><br />";
+        
+    }
+}
+catch(ServiceException $e){
+    // Handle exception based on error codes and messages.
+    // Error codes and messages are here:
+    // http://msdn.microsoft.com/library/azure/dd179439.aspx
+    $code = $e->getCode();
+    $error_message = $e->getMessage();
+    echo $code.": ".$error_message."<br />";
+}
+
+
 ?>
