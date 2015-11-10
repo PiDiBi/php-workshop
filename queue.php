@@ -10,7 +10,7 @@ use WindowsAzure\Queue\Models\CreateQueueOptions;
 use WindowsAzure\Queue\Models\PeekMessagesOptions;
 use WindowsAzure\Queue\Models\ListQueuesOptions;
 
-$connectionString = "DefaultEndpointsProtocol=https;AccountName=phpbrno;AccountKey=2Rtc+yDzBMaLrcONQRXvWcMPNWT9fP8QE69stQAS7lEcENRjN0rTJNa3OjnnxouyiOlqy+vDuei32KaQd7hMxA==";
+$connectionString = "";
 $queueRestProxy = ServicesBuilder::getInstance()->createQueueService($connectionString);
 
 $createQueueOptions = new CreateQueueOptions();

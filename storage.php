@@ -10,7 +10,7 @@ use WindowsAzure\Blob\Models\CreateContainerOptions;
 use WindowsAzure\Blob\Models\PublicAccessType;
 use WindowsAzure\Blob\Models\ListContainersOptions;
 
-$connectionString = "DefaultEndpointsProtocol=https;AccountName=phpbrno;AccountKey=2Rtc+yDzBMaLrcONQRXvWcMPNWT9fP8QE69stQAS7lEcENRjN0rTJNa3OjnnxouyiOlqy+vDuei32KaQd7hMxA==";
+$connectionString = "";
 $blobRestProxy = ServicesBuilder::getInstance()->createBlobService($connectionString); 
 
 // OPTIONAL: Set public access policy and metadata.

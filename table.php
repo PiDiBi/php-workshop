@@ -9,7 +9,7 @@ use WindowsAzure\Common\ServiceException;
 use WindowsAzure\Table\Models\Entity;
 use WindowsAzure\Table\Models\EdmType;
 
-$connectionString = "DefaultEndpointsProtocol=https;AccountName=phpbrno;AccountKey=2Rtc+yDzBMaLrcONQRXvWcMPNWT9fP8QE69stQAS7lEcENRjN0rTJNa3OjnnxouyiOlqy+vDuei32KaQd7hMxA==";
+$connectionString = "";
 $tableRestProxy = ServicesBuilder::getInstance()->createTableService($connectionString); 
 
 // table
