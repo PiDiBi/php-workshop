@@ -4,6 +4,7 @@ already contains https://github.com/Azure/azure-sdk-for-php
 dabures@msft
 
 ## php in docker
+```
 docker info
 mkdir php
 cd php
@@ -16,3 +17,4 @@ EXPOSE 80
 
 docker build -t my-php-app .
 docker run -it --rm -p 80:80 --name my-running-app my-php-app
+```
