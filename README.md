@@ -3,6 +3,12 @@ already contains https://github.com/Azure/azure-sdk-for-php
 
 dabures@msft
 
+##PHP7 on Azure
+* download PHP7 cgi http://windows.php.net/qa/ - Non thread safe 64bit
+* Unpack to PHP7 dir
+* Upload PHP7 dir to /site/PHP7 of your web
+* Add Extension - *.php - D:\home\site\php7\php-cgi.exe
+
 ## php in docker
 ```
 docker info
