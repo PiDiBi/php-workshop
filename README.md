@@ -1,5 +1,5 @@
 # php-workshop
-already contains https://github.com/Azure/azure-sdk-for-php
+already contains https://github.com/Azure/azure-sdk-for-php (todo: change to composer)
 
 dabures@msft
 
