@@ -1,9 +1,9 @@
 <?php
-error_reporting(E_ERROR | E_PARSE);
+//error_reporting(E_ERROR | E_PARSE);
 date_default_timezone_set('UTC');
 //ini_set("display_errors", 1);
 
-require_once "WindowsAzure/WindowsAzure.php";
+require_once "vendor/autoload.php";
 use WindowsAzure\Common\ServicesBuilder;
 use WindowsAzure\Common\ServiceException;
 

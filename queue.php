@@ -2,7 +2,7 @@
 //error_reporting(E_ERROR | E_PARSE);
 date_default_timezone_set('UTC');
 
-require_once "WindowsAzure/WindowsAzure.php";
+require_once "vendor/autoload.php";
 use WindowsAzure\Common\ServicesBuilder;
 use WindowsAzure\Common\ServiceException;
 
