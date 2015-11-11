@@ -9,7 +9,7 @@ use WindowsAzure\Common\ServiceException;
 use WindowsAzure\Table\Models\Entity;
 use WindowsAzure\Table\Models\EdmType;
 
-$connectionString = "";
+$connectionString = getenv("CUSTOMCONNSTR_blob");
 $tableRestProxy = ServicesBuilder::getInstance()->createTableService($connectionString); 
 
 // table

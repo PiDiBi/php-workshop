@@ -10,7 +10,7 @@ use WindowsAzure\Queue\Models\CreateQueueOptions;
 use WindowsAzure\Queue\Models\PeekMessagesOptions;
 use WindowsAzure\Queue\Models\ListQueuesOptions;
 
-$connectionString = "";
+$connectionString = getenv("CUSTOMCONNSTR_blob");
 $queueRestProxy = ServicesBuilder::getInstance()->createQueueService($connectionString);
 
 $createQueueOptions = new CreateQueueOptions();

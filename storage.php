@@ -10,7 +10,7 @@ use WindowsAzure\Blob\Models\CreateContainerOptions;
 use WindowsAzure\Blob\Models\PublicAccessType;
 use WindowsAzure\Blob\Models\ListContainersOptions;
 
-$connectionString = "";
+$connectionString = getenv("CUSTOMCONNSTR_blob");
 $blobRestProxy = ServicesBuilder::getInstance()->createBlobService($connectionString); 
 
 // OPTIONAL: Set public access policy and metadata.
