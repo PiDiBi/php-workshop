@@ -1,0 +1,11 @@
+{ 
+  "require": { 
+    "microsoft/windowsazure": "*" 
+  }, 
+  "repositories": [ 
+    { 
+      "type": "pear", 
+      "url": "http://pear.php.net" } 
+  ], 
+  "minimum-stability": "dev" 
+} 
