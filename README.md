@@ -1,5 +1,5 @@
 # php-workshop
-already contains https://github.com/Azure/azure-sdk-for-php (todo: change to composer)
+use composer to instal aszure php sdk
 
 dabures@msft
 
