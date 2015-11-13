@@ -1,6 +1,7 @@
 { 
   "require": { 
-    "microsoft/windowsazure": "*" 
+    "microsoft/windowsazure": "*",
+    "microsoft/application-insights": "*" 
   }, 
   "repositories": [ 
     { 
