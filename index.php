@@ -3,11 +3,11 @@
 <a href='queue.php'>queue sample</a><br />
 
 <?php
-/*require_once "vendor/autoload.php";
+require_once "vendor/autoload.php";
 $telemetryClient = new \ApplicationInsights\Telemetry_Client();
 $telemetryClient->getContext()->setInstrumentationKey(getenv("CUSTOMCONNSTR_AI"));
 $telemetryClient->trackEvent('index');
 $telemetryClient->flush();
-*/
+
 phpinfo();
 ?>
