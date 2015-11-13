@@ -24,3 +24,5 @@ EXPOSE 80
 docker build -t my-php-app .
 docker run -it --rm -p 80:80 --name my-running-app my-php-app
 ```
+##App Insigts
+https://github.com/microsoft/applicationinsights-php
