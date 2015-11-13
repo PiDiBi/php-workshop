@@ -9,9 +9,10 @@ dabures@msft
 * Upload PHP7 dir to /site/PHP7 of your web
 * Add Extension - *.php - D:\home\site\php7\php-cgi.exe
 * edit php.ini
-** error_log=D:\home\LogFiles\php_errors.log 
-** extension_dir="D:\home\site\php7\ext\"
-** uncoment extension=php_openssl.dll
+*  error_log=D:\home\LogFiles\php_errors.log 
+*  extension_dir="D:\home\site\php7\ext\"
+*  uncoment extension=php_openssl.dll
+
 ## php in docker
 ```
 docker info
